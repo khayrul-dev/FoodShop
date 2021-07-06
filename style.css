@@ -117,3 +117,43 @@ li{
     width: 100%;
 }
 /* ---------hero-section------- */
+
+/* ---------about------- */
+#about{
+    height: 80vh;
+    background: url(images/about-bg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    overflow: hidden;
+    margin-bottom: 100px;
+}
+#about .container{
+    gap: 100px;
+    align-items: center;
+}
+.about-img{
+    flex: 1;
+    text-align: center;
+    position: relative;
+    bottom: 0;
+}
+.about-img img{
+    width: 100%;
+
+}
+.about-text{
+    flex: 1;
+    height: 100%;
+    position: relative;
+    top: -50px;
+}
+.about-text h1{
+    font-size: 4rem;
+    color: #2C3A47;
+}
+.about-text p{
+    font-size: 1.5rem;
+    color: #555;
+    margin: 20px 0;
+}
+/* ---------about------- */
