@@ -228,3 +228,62 @@ li{
     font-weight: 400;
 }
 /* ----------followers-------- */
+
+/* ---------contact-------- */
+#contact{
+    height: 80vh;
+    background: url(images/contact-bg.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    padding: 50px 0 40px;
+}
+#contact .section-title{
+    margin-bottom: 40px;
+}
+.contact-form{
+    flex: 1;
+    text-align: center;
+}
+.contact-form form input,
+.contact-form form textarea{
+    width: 60%;
+    padding: 10px;
+    outline: none;
+    border: 1px solid #fd4b2f6b;
+    margin: 8px 0;
+    color: #2C3A47;
+    font-size: 1.4rem;
+}
+.contact-form form textarea::placeholder{
+    font-size: 1.4rem;
+    font-family: 'Popping', sans-serif;
+}
+.contact-form form input[type = "submit"]{
+    width: 20%;
+    display: block;
+    margin-left: 18%;
+    background: linear-gradient(90deg, #fb974c 0%, #fd4c2f 100%);
+    border: none;
+    cursor: pointer;
+    border-radius: 30px;
+    color: #fff;
+    font-size: 1.5rem;
+    font-weight: 500;
+    letter-spacing: 2px;
+}
+.contact-form form input[type = "submit"]:hover{
+    background: linear-gradient(90deg, #fd4c2f 0%, #fb974c 100%);
+}
+.contact-img{
+    flex: 1;
+    width: 80%;
+    text-align: center;
+    position: relative;
+    top: -20px;
+}
+.contact-img img{
+    width: 80%;
+}
+/* linear-gradient(90deg, rgba(#fd4c2f), rgba(#fb974c) */
+/* ---------contact-------- */
