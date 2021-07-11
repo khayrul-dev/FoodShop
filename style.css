@@ -429,10 +429,10 @@ footer p{
         width: 100%;
     }
     .contact-form form input,
-.contact-form form textarea{
+    .contact-form form textarea{
     width: 90%;
 
-}
+    }
     html{
         font-size: 50%;
     }
@@ -457,6 +457,10 @@ footer p{
     }
     .hambarger ion-icon{
         font-size: 2.5rem;
+    }
+    .contact-form form input[type = "submit"]{
+        width: 30%;
+        margin-left: 4%;
     }
 }
 /* --------responsive-design--------- */
