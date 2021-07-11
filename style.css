@@ -20,13 +20,37 @@ li{
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 20px 50px;
+    padding: 20px 0;
     background: #fff;
     box-shadow: 0px 0px 13px 2px #99999959;
     position: sticky;
     top: 0;
     left: 0;
     z-index: 100;
+    width: 100%;
+}
+/* .hambarger{
+} */
+.hambarger{
+    position: absolute;
+    right: 5%;
+    top: 18px;
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    z-index: 101;
+}
+.hambarger ion-icon{
+    font-size: 3rem;
+}
+.hambarger:hover ion-icon{
+    color: #00d2ff;
+}
+.navigation .logo {
+    padding-left: 5%;
 }
 .navigation .logo img{
     width: 100px;
@@ -36,6 +60,7 @@ li{
     align-items: center;
     width: 80%;
     justify-content: space-between;
+    padding-right: 5%;
 }
 .navbar ul{
     display: flex;
@@ -72,7 +97,7 @@ li{
 
 /* ---------hero-section------- */
 #hero-section{
-    min-height: 90vh;
+    height: 90vh;
     display: grid;
     place-items: center;
 }
@@ -80,8 +105,9 @@ li{
     display: flex;
     align-items: center;
     justify-content: space-between;
-    width: 80%;
+    width: 90%;
     margin: auto;
+    max-width: 1100px;
 }
 .hero-text{
     flex: 1;
@@ -125,7 +151,6 @@ li{
 
 /* ---------about------- */
 #about{
-    height: 80vh;
     background: url(images/about-bg.jpg);
     background-repeat: no-repeat;
     background-size: cover;
@@ -313,3 +338,125 @@ footer p{
     margin-top: 10px;
 }
 /* -----------footer-------- */
+
+
+/* --------responsive-design--------- */
+@media(max-width:1024px){
+    #hero-section{
+        height: auto;
+        margin: 100px 0;
+    }
+    #about{
+        height: auto;
+    }
+    #contact{
+        height: auto;
+    }
+}
+@media(max-width:850px){
+    .navbar{
+        justify-content: center;
+        z-index: 90;
+    }
+    .navbar .nav{
+        display: block;
+        position: fixed;
+        right: -200px;
+        top: 70px;
+        background: #fff;
+        box-shadow: 0px 10px 10px 1px rgba(153, 153, 153, 0.37);
+        width: 200px;
+        transition: 0.3s ease-in-out;
+    }
+    .navbar .nav.show{
+        right: 0px;
+    }
+    .navbar .nav ul{
+        z-index: -1;
+    }
+    .navbar .nav li{
+        padding: 10px 0;
+    }
+    .hambarger{
+        display: flex;
+    }
+    .navbar .nav.show{
+        right: 0px;
+    }
+}
+@media(max-width:768px){
+    #hero-section{
+        padding: 50px 0;
+    }
+    #hero-section .hero-img{
+        margin-bottom: 50px;
+    }
+    #hero-section .container{
+        flex-direction: column-reverse;
+    }
+    .container{
+        flex-direction: column;
+    }
+    #about{
+        height: auto;
+        padding: 100px 0;
+    }
+    #about .about-img{
+        display: none;
+    }
+    #about .about-text{
+        top: 0;
+    }
+    .follower-col {
+        width: 60%;
+    }
+    #contact{
+        height: auto;
+    }
+    #contact .container{
+        flex-direction: column-reverse;
+    }
+    .contact-form{
+        width: 100%;
+        margin-top: 50px;
+    }
+    .contact-img{
+        flex: 1;
+        width: 100%;
+        top: 0px;
+    }
+    .contact-img img{
+        width: 100%;
+    }
+    .contact-form form input,
+.contact-form form textarea{
+    width: 90%;
+
+}
+    html{
+        font-size: 50%;
+    }
+    .navbar{
+        width: 90%;
+    }
+    .navbar .getInTouch li{
+        padding: 5px 15px;
+        margin-left: 10px;
+    }
+    .navigation .logo {
+        padding-left: 2%;
+    }
+    .navigation .logo img{
+        width: 80px;
+    }
+    .hambarger{
+        right: 2%;
+        top: 20px;
+        width: 30px;
+        height: 30px;
+    }
+    .hambarger ion-icon{
+        font-size: 2.5rem;
+    }
+}
+/* --------responsive-design--------- */
